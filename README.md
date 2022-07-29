@@ -24,10 +24,11 @@
     show proj abstract           -- Done    
 
 ###week9 TODO:
+    show 3 AnswerS at index         -- Done
     peer review and feedback        -- Done
     likes Bottom                    -- Done
     Show answer and index           -- Done
-    Quick start Doc
+    Quick start Doc                 -- Done
     profile page
     a good looking page template    -- Done
     rebuilt home page               -- Done
