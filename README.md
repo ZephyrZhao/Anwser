@@ -1,4 +1,13 @@
 # Anwser
+quick start
+
+-- install mysql
+
+-- install requirements
+
+- run app.py
+
+
 ####z5315325 zhaojunfeng TodoLsit:
 ###week1 TODO:
     choose a topic---Done
