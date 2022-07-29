@@ -12,7 +12,7 @@ bp = Blueprint("qa",__name__,url_prefix="/")
 @bp.route("/")
 def index():
     questions = QuestionModel.query.order_by(db.text("-create_time")).all()
-    return render_template("index.html",questions=questions)
+    return render_template("index2.html",questions=questions)
 
 @bp.route("/course",methods=['GET','POST'])
 def create_course():
@@ -79,7 +79,7 @@ def public_question():
 def question_detail(question_id):
     question = QuestionModel.query.get(question_id)
     answers = AnswerModel.query.filter_by(question_id=question.id).order_by(db.text("-likes")).all()
-    return render_template("detail.html", question=question,user=g.user,answers = answers)
+    return render_template("detail2.html", question=question,user=g.user,answers = answers)
 
 
 
@@ -116,7 +116,7 @@ def search():
     # filter_by：直接使用字段的名称
     # filter：使用模型.字段名称
     questions =QuestionModel.query.filter(or_(QuestionModel.title.contains(q),QuestionModel.content.contains(q))).order_by(db.text("-create_time"))
-    return render_template("index.html",questions=questions)
+    return render_template("index2.html",questions=questions)
 
 @bp.route("/likes/<int:answer_id>")
 def likes(answer_id):

@@ -1,3 +1,8 @@
 body{
     background-color: #f3f3f3;
 }
+
+.bg-1 {
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
